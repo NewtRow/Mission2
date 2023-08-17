@@ -1,3 +1,44 @@
-h1 {
-    color:blue
+* {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* container, top navbar */
+.container{}
+
+/* top nav */
+.navbar{
+    width: 20vw;
+}
+
+.navbar ul{
+    display: flex
+    gap: 3em;
+    padding: 2em;
+    list-style: none;
+}
+
+.navbar ul a:hover{
+    border-bottom: 3px solid; 
+    color: rgb(48, 44, 20);
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(48, 33, 20);
+}
+
+.container {
+    background: rgb(0, 48, 73);
+    background: linear-gradient(360deg
+    rgba(0, 48, 73, 1) 20%;
+    rgba(234, 226, 183, 11`);
 }
