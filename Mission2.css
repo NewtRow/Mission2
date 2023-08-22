@@ -1,44 +1,100 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
+
+.bg {
+  background-color: #f5d105;
+  clip-path: polygon(0 0, 76% 0, 45% 100%, 0 100%);
+  /* height: 60em;  i have removed this so get it the full length of the page */
+  width: 100%;
+}
+
 /* container, top navbar */
-.container{}
-
-/* top nav */
-.navbar{
-    width: 20vw;
-}
-
-.navbar ul{
-    display: flex
-    gap: 3em;
-    padding: 2em;
-    list-style: none;
-}
-
-.navbar ul a:hover{
-    border-bottom: 3px solid; 
-    color: rgb(48, 44, 20);
-}
-
-.navbar a{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(48, 33, 20);
-}
 
 .container {
     background: rgb(0, 48, 73);
-    background: linear-gradient(360deg
-    rgba(0, 48, 73, 1) 20%;
-    rgba(234, 226, 183, 11`);
+    background: linear-gradient(
+      360deg,
+      rgba(0, 48, 73, 1) 20%,
+      rgba(234, 226, 183, 11) 90%
+    );
+    padding-top: 200px; /* Adjust this value as needed */
+}
+
+/* top nav */
+.navbar {
+  width: 20vw;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 3em;
+  padding: 2em;
+  list-style: none;
+}
+
+.navbar ul a:hover {
+  border-bottom: 3px solid;
+  color: rgb(48, 44, 20);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(48, 33, 20);
+}
+
+.centreContent {
+  height: 50em;
+  max-width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20em;
+  gap: 1em;
+  color: #003049;
+}
+
+.centreContent h1 {
+  font-size: 5em;
+  background-color: #003049;
+  color: #06ecd5;
+  padding: 10px;
+}
+
+.card-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* adding this in to ensure the cards sit on top of the backgronud*/
+}
+
+
+/* styling the card box */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.);
+    transition: transform 0.3s, box-shadow 0.3s
+}
+
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
